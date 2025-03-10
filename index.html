@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator-SMIT Mini Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Password Generator</h1>
+      <form>
+        <input type="text" id="result" placeholder="Your Secure Password" />
+        <h6 class="passwordLenght">Lenght: <span>16</span></h6>
+        <label for="lenghtRange" class="range-label">
+          <span class="rangeMinValue">4</span>
+          <input type="range" id="lenghtRange" min="4" max="32" value="16" />
+          <span class="rangeMaxValue">32</span>
+        </label>
+        <h6>SETTINGS</h6>
+        <div class="setting">
+          <label for="uppercase">Include UpperCase</label>
+          <div class="toggle-switch">
+            <input class="toggle-input" type="checkbox" />
+            <label class="toggle-label" for="toggle"></label>
+          </div>
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include LowerCase</label>
+          <div class="toggle-switch">
+            <input class="toggle-input" type="checkbox" />
+            <label class="toggle-label" for="toggle"></label>
+          </div>
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include Numbers</label>
+          <div class="toggle-switch">
+            <input class="toggle-input" type="checkbox" />
+            <label class="toggle-label" for="toggle"></label>
+          </div>
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include Symbols</label>
+          <div class="toggle-switch">
+            <input class="toggle-input" id="toggle" type="checkbox" />
+            <label class="toggle-label" for="toggle"></label>
+          </div>
+        </div>
+        <button type="submit">Generate Password</button>
+      </form>
+    </div>
+  </body>
+</html>

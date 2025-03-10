@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(0, 255, 230);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 230, 1) 18%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #0a0e31;
+  height: 700px;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+form input {
+  background-color: #1d2141;
+}
+
+form > * {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1d2141;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h6 {
+  background-color: #0a0e31;
+  color: #b1b1b1;
+}
+
+.passwordLenght {
+  display: block;
+}
+
+.passwordLenght > span {
+  font-size: 13px;
+  color: white;
+}
+
+form button {
+  background-image: linear-gradient(to right, #677be6, #744fa8);
+  color: #fff;
+  padding: 12px 90px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  margin-top: 8px;
+}
+
+/* toggle Switch CSS */
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 10px;
+}
+
+.toggle-switch .toggle-input {
+  display: none;
+}
+
+.toggle-switch .toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 24px;
+  background-color: #2196f3;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch .toggle-label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label {
+  background-color: #4caf50;
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label::before {
+  transform: translateX(16px);
+}
+
+.toggle-switch.light .toggle-label {
+  background-color: #bebebe;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label {
+  background-color: #9b9b9b;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label::before {
+  transform: translateX(6px);
+}
+
+.toggle-switch.dark .toggle-label {
+  background-color: #4b4b4b;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label {
+  background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+  transform: translateX(16px);
+}
