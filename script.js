@@ -3,13 +3,20 @@ let alphabets = "abcdefghijklmnopqrstuvwxyz";
 let symbols = "!@#$%^&*()_+";
 let upperCaseAlphabets = alphabets.toUpperCase();
 let password = "";
+document.getElementById("lenghtRange").value = 16;
 document.getElementById("toggle2").checked = true;
+document
+  .getElementById("lenghtRange")
+  .addEventListener("input", function () {
+    console.log(this.value);
+    
+    document.querySelector(".passwordLenght>span").innerHTML = this.value;
+  });
 
 function genRandomPassword() {
   document.getElementById("result").value = "";
   password = "";
   let lenght = document.getElementById("lenghtRange");
-  lenght.value = 16;
   let IncludeUpperCase = false;
   let IncludeLowerCase = false;
   let IncludeNumbers = false;
