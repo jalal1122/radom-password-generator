@@ -76,7 +76,7 @@ h6 {
   color: white;
 }
 
-form button {
+.container button {
   background-image: linear-gradient(to right, #677be6, #744fa8);
   color: #fff;
   padding: 12px 90px;
@@ -146,14 +146,9 @@ form button {
   transform: translateX(6px);
 }
 
-.toggle-switch.dark .toggle-label {
-  background-color: #4b4b4b;
-}
-
-.toggle-switch.dark .toggle-input:checked + .toggle-label {
-  background-color: #717171;
-}
-
-.toggle-switch.dark .toggle-input:checked + .toggle-label::before {
-  transform: translateX(16px);
+@media screen and (max-width: 500px) {
+  .container {
+    width: 300px;
+    height: 780px;
+  }
 }

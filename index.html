@@ -14,40 +14,41 @@
         <h6 class="passwordLenght">Lenght: <span>16</span></h6>
         <label for="lenghtRange" class="range-label">
           <span class="rangeMinValue">4</span>
-          <input type="range" id="lenghtRange" min="4" max="32" value="16" />
+          <input type="range" id="lenghtRange" min="4" max="32" />
           <span class="rangeMaxValue">32</span>
         </label>
         <h6>SETTINGS</h6>
         <div class="setting">
           <label for="uppercase">Include UpperCase</label>
           <div class="toggle-switch">
-            <input class="toggle-input" type="checkbox" />
-            <label class="toggle-label" for="toggle"></label>
+            <input class="toggle-input" id="toggle1" type="checkbox" />
+            <label class="toggle-label" for="toggle1"></label>
           </div>
         </div>
         <div class="setting">
           <label for="uppercase">Include LowerCase</label>
           <div class="toggle-switch">
-            <input class="toggle-input" type="checkbox" />
-            <label class="toggle-label" for="toggle"></label>
+            <input class="toggle-input" id="toggle2" type="checkbox" />
+            <label class="toggle-label" for="toggle2"></label>
           </div>
         </div>
         <div class="setting">
           <label for="uppercase">Include Numbers</label>
           <div class="toggle-switch">
-            <input class="toggle-input" type="checkbox" />
-            <label class="toggle-label" for="toggle"></label>
+            <input class="toggle-input" id="toggle3" type="checkbox" />
+            <label class="toggle-label" for="toggle3"></label>
           </div>
         </div>
         <div class="setting">
           <label for="uppercase">Include Symbols</label>
           <div class="toggle-switch">
-            <input class="toggle-input" id="toggle" type="checkbox" />
-            <label class="toggle-label" for="toggle"></label>
+            <input class="toggle-input" id="toggle4" type="checkbox" />
+            <label class="toggle-label" for="toggle4"></label>
           </div>
         </div>
-        <button type="submit">Generate Password</button>
       </form>
+      <button onclick="genRandomPassword()">Generate Password</button>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
